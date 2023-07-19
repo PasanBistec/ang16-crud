@@ -10,7 +10,11 @@ export class SuperHeroesService {
   constructor(private http: HttpClient) { }
   
   get():Observable<SuperHeroes[]>{
-     return this.http.get<SuperHeroes[]>("http://localhost:3000/superHeros")
+     return this.http.get<SuperHeroes[]>('http://localhost:3000/superHeros')
+  }
+
+  add(payload:SuperHeroes) {
+    return this.http.post('http://localhost:3000/superHeros',payload);
   }
  
 }

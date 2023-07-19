@@ -8,11 +8,17 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { AllSuperherosesComponent } from './super-heroes/all-superheroses/all-superheroses.component';
 import { HttpClientModule} from '@angular/common/http'
 import {MatCardModule} from '@angular/material/card';
+import { AddSuperheroesComponent } from './super-heroes/add-superheroes/add-superheroes.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AllSuperherosesComponent
+    AllSuperherosesComponent,
+    AddSuperheroesComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +26,11 @@ import {MatCardModule} from '@angular/material/card';
     BrowserAnimationsModule,
     MatToolbarModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
