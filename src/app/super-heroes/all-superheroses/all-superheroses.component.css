@@ -9,3 +9,9 @@
   flex-wrap: wrap;
   justify-content: center;
   }
+
+  .add-box{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+  }

@@ -1,18 +1,18 @@
 {
   "superHeros": [
     {
-      "id": 1,
-      "name": "Iorn Man",
+      "id": 2,
+      "name": "Bat Mans",
       "imageUrl": "https://picsum.photos/200/300",
-      "franchise":"marvel",
-      "gender":"male"
+      "franchise": "dc",
+      "gender": "female"
     },
     {
-      "id": 2,
-      "name": "Bat Man",
-      "imageUrl": "https://picsum.photos/200/300",
-      "franchise":"dc",
-      "gender":"male"
+      "name": "bat",
+      "imageUrl": "https://picsum.photos/200",
+      "franchise": "marvel",
+      "gender": "male",
+      "id": 3
     }
-  ] 
+  ]
 }

@@ -1,0 +1,40 @@
+<div class="card-container">
+  <mat-chip-listbox aria-label="Dog selection">
+    <mat-chip>
+      <h2>Update A Super Hero</h2>
+    </mat-chip>
+  </mat-chip-listbox>
+</div>
+<div class="card-container">
+    <mat-card class="card">
+      <div class="card-container">
+        <form class="form-container" [formGroup]="updateSuperHeroForm" (ngSubmit)="update()">
+          <mat-form-field appearance="fill" style="width:400px">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" />
+          </mat-form-field>
+          <mat-form-field appearance="fill" style="width:400px">
+            <mat-label>Img URL</mat-label>
+            <input matInput formControlName="imageUrl" />
+          </mat-form-field>
+          <mat-form-field  appearance="fill" style="width:400px">
+            <mat-label>Franchice</mat-label>
+            <mat-select formControlName="franchise">
+              <mat-option value="marvel">Marvel</mat-option>
+              <mat-option value="dc">DC</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-radio-group aria-label="Select an option" formControlName="gender">
+            <mat-radio-button value="male">Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+          </mat-radio-group>
+          <button mat-raised-button color="primary">Update</button>
+  
+        </form>
+        <div>
+          <img mat-card-image src="{{ this.updateSuperHeroForm.get('imageUrl')?.value ?  this.updateSuperHeroForm.get('imageUrl')?.value : noImage}} " alt="testing" width="500px" > 
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  
